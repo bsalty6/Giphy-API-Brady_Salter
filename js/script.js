@@ -4,8 +4,9 @@ const API_KEY = "9axRL9jBfBRGxRUPJNbz4htYqKeqfd67";
 const gifContainer = document.querySelector("#gif-container");
 const button = document.querySelector("#fetch-gif-btn");
 const searchInput = document.querySelector("#search-input");
-
+    // Fetch GIFs from Giphy when the button is clicked
 button.addEventListener("click", async () => {
+    // Use the search box text, or fall back to "cats"
   const query = searchInput.value || "cats";
   const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${encodeURIComponent(query)}&limit=12`;
 
