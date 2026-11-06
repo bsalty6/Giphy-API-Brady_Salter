@@ -1,1 +1,4 @@
 /* Add any custom CSS stylings you want here */
+#gif-container img {
+  border-radius: 8px;
+}
